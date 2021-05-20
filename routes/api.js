@@ -46,7 +46,6 @@ router.get("/workouts/range", (req, res) => {
     }
   ]).sort({ day: 1 })
     .then(dbWorkout => {
-      console.log(dbWorkout);
       res.json(dbWorkout.slice(-7));
     })
     .catch(err => {
@@ -54,8 +53,8 @@ router.get("/workouts/range", (req, res) => {
     });
 });
 
-router.put("/workouts/:id", ({body}, res) => {
-    Workout.update(body)
+router.put("/workouts/:id", (req, res) => {
+    Workout.update({ _id: req.params.id }, { $push: { exercises: req.body} })
     .then(dbWorkout => {
         res.json(dbWorkout);
       })
