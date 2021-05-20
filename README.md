@@ -5,7 +5,7 @@
 Link to deployed application [Heroku Link](https://calm-ridge-18618.herokuapp.com/)
 
 ## Summary
-An app that let's the user view, create, and track daily workouts. 
+An app that let's the user view, create, and track daily workouts. Creating the back-end portion of this application by using a Mongo database with a Mongoose schema and handle routes with Express. The Fitness tracker is deployed to and hosted on Heroku. 
 
 ![Picture one of the app](pictures/app-view.png)
 
@@ -16,10 +16,9 @@ An app that let's the user view, create, and track daily workouts.
 4. [Resources](#resources)
 
 ## Usage
-Upon opening the app a user is sent to the homepage with the list of blogs (if there are any). If a user tries to click on a blog post they are redirected a sign in page where they can either login or sign up. Once that is completed a user is sent back to the homepage where they can now access blog posts and also comment on them. Once a user is logged in a dashboard link appears. From the dashboard a user can create, update or delete a blog post. 
+Upon opening the app a user is sent to the homepage which will display the users last workout. From there the users can choose to "Contine Workout" or create a "New Workout."  
 
-### Adding comments to post view: 
-![Picture of the add comment page view](pictures/adding-comments.png)
+![Picture of the homepage view](pictures/adding-comments.png)
 
 Unless a user signs up and is logged in they will not be able to comment or do any other activity. They will be redirected to the login/ sign up page.  A user also has the option to logout. If a user remains inactive for more than two hours the app will automatically log the user out. 
 
