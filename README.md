@@ -18,9 +18,17 @@ An app that let's the user view, create, and track daily workouts. Creating the 
 ## Usage
 Upon opening the app a user is sent to the homepage which will display the users last workout. From there the users can choose to "Contine Workout" or create a "New Workout."  
 
-![Picture of the homepage view](pictures/adding-comments.png)
+![Picture of the homepage view](pictures/landing-screen.png)
 
-Unless a user signs up and is logged in they will not be able to comment or do any other activity. They will be redirected to the login/ sign up page.  A user also has the option to logout. If a user remains inactive for more than two hours the app will automatically log the user out. 
+If a user decides to contiue their workout they are brought to the exericse api where they will choose which type of workout they wish to continue either Cardio or Resistance. From there the user fills out the form and can then decide whether or complete the exercise or add another exercise. If the user cooses to complete an excerise they are then redirected back to the homepage if they choose to add another exercise a message is displayed letting the user know their workout was added and the form resets. 
+
+![Picture of the homepage view](pictures/add-exercise.png)
+
+For the New Workout page is similar to the continue exercise button. The user will choose either a cardio or resistance workout and fill out the form, once done they can decide to complete the workout or add another exercise. After completeing the workout the user is once again taken back the to landing page. 
+
+The most complicated part of the application was getting the stats api route to work. In the stats page the user can view two graphs. The first graph shower them the total duration of their workout per day for the last seven days. The second graph is a bar graph that shows the combined weight in pounds used in the workout per day for the last 7 days. Clicking "Fitness Tracker" in the nav bar will take the user back to the loading page.  
+
+![Picture of the homepage view](pictures/graphs.png)
 
 ## Setup
 This application is set up using the MVC paradigm and file structure. The controller and api folders hold all the different routes used. The controllers act as the interface between models and views. The models hold the models which store data for the database. The Public and View folders handle all the front-end components. The public folder handles the css and any middleware javascript files. The views folder holds all the handlebars files.
