@@ -2,6 +2,7 @@ const router = require('express').Router();
 const path = require('path');
 //const { Cardio, Resistance, Workout } = require('../models');
 
+//This is stats page
 router.get('/stats', async (req, res) => {
     try {
       res.sendFile(path.join(__dirname, '../public/stats.html'));
