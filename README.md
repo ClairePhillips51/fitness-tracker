@@ -7,8 +7,6 @@ Link to deployed application [Heroku Link](https://calm-ridge-18618.herokuapp.co
 ## Summary
 An app that let's the user view, create, and track daily workouts. Creating the back-end portion of this application by using a Mongo database with a Mongoose schema and handle routes with Express. The Fitness tracker is deployed to and hosted on Heroku. 
 
-![Picture one of the app](pictures/app-view.png)
-
 ## Table of Contents
 1. [Usage](#usage)
 2. [SetUp](#setup)
