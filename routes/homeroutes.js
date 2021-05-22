@@ -10,7 +10,7 @@ router.get('/stats', async (req, res) => {
       res.status(500).json(err);
     }
   });
-
+//This is the exercise page
 router.get('/exercise', async (req, res) => {
     try {
       res.sendFile(path.join(__dirname, '/../public/exercise.html'));

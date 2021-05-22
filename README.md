@@ -31,16 +31,18 @@ The most complicated part of the application was getting the stats api route to 
 ![Picture of the homepage view](pictures/graphs.png)
 
 ## Setup
-This application is set up using the MVC paradigm and file structure. The controller and api folders hold all the different routes used. The controllers act as the interface between models and views. The models hold the models which store data for the database. The Public and View folders handle all the front-end components. The public folder handles the css and any middleware javascript files. The views folder holds all the handlebars files.
+The back-end portion of this application is set up using a Mongo database with a Mongoose schema. The different routes are handlesd with Express. To set up the database different Mongoose schemas were made in the models folder. 
+
+A db.js file was also added to the front-end portion of the file structure. 
 
 The backend required several npm packages to set up various functions. Express-handlebars was needed to implement handlebars.js. MySQL2 and Sequelize were needed to connect to the database. Dotenv for the environment variables, bcrypt to hash passwords, and express-sessions and connect-session-sequeliza for authentication. 
 
 ![Needed npm packages](pictures/needed-packs.png)
 
 ## What I Learned
-Looking at the file structure all that was need for this project felt like a huge undertaking. Being able to copy and paste boiler plate code from the past weeks mini-project were extremelly helpful setting up the server.js file and the authentication process. 
+The routes were the most difficult part of this project for me. The models and the db.js file were easy enough to follow along with, but getting the routes to diplay the information and run the front end code took multiple hours to figure out. The MongoDB aggregate functions was used to get the total duration time of a workout and getting that to dispaly on the homepage wasn't too much trouble, but getting to total time to plot on the graph was
 
-I had trouble getting the posts to delete. The server would break trying to delete posts with comments because it would try to delete the post before deleting the comments. In the associations in the Index.js file the "onDelete: 'CASCADE'" wasn't working. I ended up having to manually go through the posts and delete comments so the post could be deleted.
+Another roadblock I ran into was that the .update method is deprecated and I spent a long time trying to find a more recent version, but ultimaly just went with what was taught in class and the method worked. 
 
 ![Delete code](pictures/delete-work-around.png)
 
