@@ -40,15 +40,15 @@ The backend required several npm packages to set up various functions. Express-h
 ![Needed npm packages](pictures/needed-packs.png)
 
 ## What I Learned
-The routes were the most difficult part of this project for me. The models and the db.js file were easy enough to follow along with, but getting the routes to diplay the information and run the front end code took multiple hours to figure out. The MongoDB aggregate functions was used to get the total duration time of a workout and getting that to dispaly on the homepage wasn't too much trouble, but getting to total time to plot on the graph was
+The routes were the most difficult part of this project for me. The models and the db.js file were easy enough to follow along with, but getting the routes to diplay the information and run the front end code took multiple hours to figure out. The MongoDB aggregate functions was used to get the total duration time of a workout and getting that to dispaly on the homepage wasn't too much trouble, but getting to total time to plot on the graph was difficult as another aggregate function was needed. 
 
 Another roadblock I ran into was that the .update method is deprecated and I spent a long time trying to find a more recent version, but ultimaly just went with what was taught in class and the method worked. 
 
-![Delete code](pictures/delete-work-around.png)
+![Delete code](pictures/dep-update.png)
 
 ## Resources
 * [Mongo Aggregation](https://docs.mongodb.com/manual/aggregation/)
 * [Mongo $Sum](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/)
-* [Mongo Aggregation Pipeline](hhttps://docs.mongodb.com/manual/meta/aggregation-quick-reference/#std-label-aggregation-expressions)
+* [Mongo Aggregation Pipeline](https://docs.mongodb.com/manual/meta/aggregation-quick-reference/#std-label-aggregation-expressions)
 * [Mongoose](https://mongoosejs.com/docs/2.7.x/docs/updating-documents.html) 
 * [Mongo $Add](https://docs.mongodb.com/manual/reference/operator/aggregation/addFields/) 
